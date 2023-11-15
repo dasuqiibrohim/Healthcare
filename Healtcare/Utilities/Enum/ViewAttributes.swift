@@ -8,21 +8,16 @@
 import Foundation
 
 enum ViewAttributes {
-    enum Color {
-        case customRed
-        case customBlue
-        // Tambahkan warna lain jika diperlukan
-    }
-    
     enum FontType: String {
-        case proximaNova100 = "proximanova-thin"
-        case proximaNova300 = "proximanova-light"
-        case proximaNova400 = "proximanova-regular"
-        case proximaNova500 = "proximanova-medium"
-        case proximaNova600 = "proximanova-semibold"
-        case proximaNova700 = "proximanova-bold"
-        case proximaNova800 = "proximanova-extrabold"
-        case proximaNova900 = "proximanova-black"
+        case inter100 = "inter-thin"
+        case inter200 = "inter-extralight"
+        case inter300 = "inter-light"
+        case inter400 = "inter-regular"
+        case inter500 = "inter-medium"
+        case inter600 = "inter-semibold"
+        case inter700 = "inter-bold"
+        case inter800 = "inter-extrabold"
+        case inter900 = "inter-black"
         
         case gilroy100 = "gilroy-thin"
         case gilroy200 = "gilroy-ultralight"
