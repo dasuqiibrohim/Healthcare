@@ -11,6 +11,18 @@
 		71AE5F052B0504F5007508CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AE5F042B0504F5007508CB /* ContentView.swift */; };
 		71AE5F072B0504F6007508CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71AE5F062B0504F6007508CB /* Assets.xcassets */; };
 		71AE5F0A2B0504F6007508CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71AE5F092B0504F6007508CB /* Preview Assets.xcassets */; };
+		71E0535C2B050B890048BBB8 /* ViewAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E0535B2B050B890048BBB8 /* ViewAttributes.swift */; };
+		71E0535E2B050D270048BBB8 /* ExtentionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E0535D2B050D270048BBB8 /* ExtentionView.swift */; };
+		71E0536D2B050FDA0048BBB8 /* gilroy-black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E053642B050FDA0048BBB8 /* gilroy-black.ttf */; };
+		71E0536E2B050FDA0048BBB8 /* gilroy-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E053652B050FDA0048BBB8 /* gilroy-regular.ttf */; };
+		71E0536F2B050FDA0048BBB8 /* gilroy-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E053662B050FDA0048BBB8 /* gilroy-light.ttf */; };
+		71E053702B050FDA0048BBB8 /* gilroy-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E053672B050FDA0048BBB8 /* gilroy-semibold.ttf */; };
+		71E053712B050FDA0048BBB8 /* gilroy-thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E053682B050FDA0048BBB8 /* gilroy-thin.ttf */; };
+		71E053722B050FDA0048BBB8 /* gilroy-extrabold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E053692B050FDA0048BBB8 /* gilroy-extrabold.ttf */; };
+		71E053732B050FDA0048BBB8 /* gilroy-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E0536A2B050FDA0048BBB8 /* gilroy-medium.ttf */; };
+		71E053742B050FDA0048BBB8 /* gilroy-ultralight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E0536B2B050FDA0048BBB8 /* gilroy-ultralight.ttf */; };
+		71E053752B050FDA0048BBB8 /* gilroy-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E0536C2B050FDA0048BBB8 /* gilroy-bold.ttf */; };
+		71E053822B0511B40048BBB8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E053812B0511B40048BBB8 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +31,27 @@
 		71AE5F042B0504F5007508CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		71AE5F062B0504F6007508CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71AE5F092B0504F6007508CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		71E0535B2B050B890048BBB8 /* ViewAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAttributes.swift; sourceTree = "<group>"; };
+		71E0535D2B050D270048BBB8 /* ExtentionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionView.swift; sourceTree = "<group>"; };
+		71E053642B050FDA0048BBB8 /* gilroy-black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "gilroy-black.ttf"; sourceTree = "<group>"; };
+		71E053652B050FDA0048BBB8 /* gilroy-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "gilroy-regular.ttf"; sourceTree = "<group>"; };
+		71E053662B050FDA0048BBB8 /* gilroy-light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "gilroy-light.ttf"; sourceTree = "<group>"; };
+		71E053672B050FDA0048BBB8 /* gilroy-semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "gilroy-semibold.ttf"; sourceTree = "<group>"; };
+		71E053682B050FDA0048BBB8 /* gilroy-thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "gilroy-thin.ttf"; sourceTree = "<group>"; };
+		71E053692B050FDA0048BBB8 /* gilroy-extrabold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "gilroy-extrabold.ttf"; sourceTree = "<group>"; };
+		71E0536A2B050FDA0048BBB8 /* gilroy-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "gilroy-medium.ttf"; sourceTree = "<group>"; };
+		71E0536B2B050FDA0048BBB8 /* gilroy-ultralight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "gilroy-ultralight.ttf"; sourceTree = "<group>"; };
+		71E0536C2B050FDA0048BBB8 /* gilroy-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "gilroy-bold.ttf"; sourceTree = "<group>"; };
+		71E053772B0510B80048BBB8 /* proximanova-black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "proximanova-black.otf"; sourceTree = "<group>"; };
+		71E053782B0510B80048BBB8 /* proximanova-medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "proximanova-medium.otf"; sourceTree = "<group>"; };
+		71E053792B0510B80048BBB8 /* proximanova-regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "proximanova-regular.otf"; sourceTree = "<group>"; };
+		71E0537A2B0510B80048BBB8 /* proximanova-thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "proximanova-thin.otf"; sourceTree = "<group>"; };
+		71E0537B2B0510B80048BBB8 /* proximanova-semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "proximanova-semibold.otf"; sourceTree = "<group>"; };
+		71E0537C2B0510B80048BBB8 /* proximanova-light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "proximanova-light.otf"; sourceTree = "<group>"; };
+		71E0537D2B0510B80048BBB8 /* proximanova-extrabold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "proximanova-extrabold.otf"; sourceTree = "<group>"; };
+		71E0537E2B0510B80048BBB8 /* proximanova-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "proximanova-bold.otf"; sourceTree = "<group>"; };
+		71E0537F2B0511540048BBB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71E053812B0511B40048BBB8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +84,10 @@
 		71AE5F012B0504F5007508CB /* Healtcare */ = {
 			isa = PBXGroup;
 			children = (
-				71AE5F022B0504F5007508CB /* HealtcareApp.swift */,
-				71AE5F042B0504F5007508CB /* ContentView.swift */,
-				71AE5F062B0504F6007508CB /* Assets.xcassets */,
+				71E053832B05172A0048BBB8 /* Base */,
+				71E053842B0517630048BBB8 /* Features */,
+				71E0535F2B050E610048BBB8 /* Resources */,
+				71E053582B050ADA0048BBB8 /* Utilities */,
 				71AE5F082B0504F6007508CB /* Preview Content */,
 			);
 			path = Healtcare;
@@ -65,6 +99,98 @@
 				71AE5F092B0504F6007508CB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		71E053582B050ADA0048BBB8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				71E0535A2B050B670048BBB8 /* Enum */,
+				71E053592B050AF50048BBB8 /* Extention */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		71E053592B050AF50048BBB8 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				71E0535D2B050D270048BBB8 /* ExtentionView.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		71E0535A2B050B670048BBB8 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				71E053812B0511B40048BBB8 /* Constants.swift */,
+				71E0535B2B050B890048BBB8 /* ViewAttributes.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		71E0535F2B050E610048BBB8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				71AE5F062B0504F6007508CB /* Assets.xcassets */,
+				71E053602B050E690048BBB8 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		71E053602B050E690048BBB8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				71E053762B05101D0048BBB8 /* Proxima Nova */,
+				71E053632B050FCC0048BBB8 /* Gilory */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		71E053632B050FCC0048BBB8 /* Gilory */ = {
+			isa = PBXGroup;
+			children = (
+				71E053642B050FDA0048BBB8 /* gilroy-black.ttf */,
+				71E0536C2B050FDA0048BBB8 /* gilroy-bold.ttf */,
+				71E053692B050FDA0048BBB8 /* gilroy-extrabold.ttf */,
+				71E053662B050FDA0048BBB8 /* gilroy-light.ttf */,
+				71E0536A2B050FDA0048BBB8 /* gilroy-medium.ttf */,
+				71E053652B050FDA0048BBB8 /* gilroy-regular.ttf */,
+				71E053672B050FDA0048BBB8 /* gilroy-semibold.ttf */,
+				71E053682B050FDA0048BBB8 /* gilroy-thin.ttf */,
+				71E0536B2B050FDA0048BBB8 /* gilroy-ultralight.ttf */,
+			);
+			path = Gilory;
+			sourceTree = "<group>";
+		};
+		71E053762B05101D0048BBB8 /* Proxima Nova */ = {
+			isa = PBXGroup;
+			children = (
+				71E053772B0510B80048BBB8 /* proximanova-black.otf */,
+				71E0537E2B0510B80048BBB8 /* proximanova-bold.otf */,
+				71E0537D2B0510B80048BBB8 /* proximanova-extrabold.otf */,
+				71E0537C2B0510B80048BBB8 /* proximanova-light.otf */,
+				71E053782B0510B80048BBB8 /* proximanova-medium.otf */,
+				71E053792B0510B80048BBB8 /* proximanova-regular.otf */,
+				71E0537B2B0510B80048BBB8 /* proximanova-semibold.otf */,
+				71E0537A2B0510B80048BBB8 /* proximanova-thin.otf */,
+			);
+			path = "Proxima Nova";
+			sourceTree = "<group>";
+		};
+		71E053832B05172A0048BBB8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				71E0537F2B0511540048BBB8 /* Info.plist */,
+				71AE5F022B0504F5007508CB /* HealtcareApp.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		71E053842B0517630048BBB8 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				71AE5F042B0504F5007508CB /* ContentView.swift */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +251,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71E053722B050FDA0048BBB8 /* gilroy-extrabold.ttf in Resources */,
+				71E0536E2B050FDA0048BBB8 /* gilroy-regular.ttf in Resources */,
+				71E053712B050FDA0048BBB8 /* gilroy-thin.ttf in Resources */,
+				71E053752B050FDA0048BBB8 /* gilroy-bold.ttf in Resources */,
+				71E053742B050FDA0048BBB8 /* gilroy-ultralight.ttf in Resources */,
+				71E0536D2B050FDA0048BBB8 /* gilroy-black.ttf in Resources */,
+				71E0536F2B050FDA0048BBB8 /* gilroy-light.ttf in Resources */,
+				71E053702B050FDA0048BBB8 /* gilroy-semibold.ttf in Resources */,
+				71E053732B050FDA0048BBB8 /* gilroy-medium.ttf in Resources */,
 				71AE5F0A2B0504F6007508CB /* Preview Assets.xcassets in Resources */,
 				71AE5F072B0504F6007508CB /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71E053822B0511B40048BBB8 /* Constants.swift in Sources */,
+				71E0535C2B050B890048BBB8 /* ViewAttributes.swift in Sources */,
 				71AE5F052B0504F5007508CB /* ContentView.swift in Sources */,
 				71AE5F032B0504F5007508CB /* HealtcareApp.swift in Sources */,
+				71E0535E2B050D270048BBB8 /* ExtentionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +408,7 @@
 				DEVELOPMENT_TEAM = HLA46B3S65;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Healtcare/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +438,7 @@
 				DEVELOPMENT_TEAM = HLA46B3S65;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Healtcare/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+enum Constants {
+    static let baseURL = "https://api.example.com"
+    static let version = "v1"
+}
