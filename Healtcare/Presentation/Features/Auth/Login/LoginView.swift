@@ -34,12 +34,12 @@ struct LoginView: View {
             
             VStack(spacing: 20) {
                 ComponentTextInput(text: $viewModel.textUserName,
-                                   errorText: .constant(""),
+                                   errorText: $viewModel.errorLogin,
                                    tittle: "Email",
                                    placeholder: "Masukkan email anda")
                 
                 ComponentTextInput(text: $viewModel.textPassword,
-                                   errorText: $viewModel.errorLogin,
+                                   errorText: .constant(""),
                                    tittle: "Password",
                                    placeholder: "Masukkan password anda",
                                    isPassword: true,
@@ -51,8 +51,16 @@ struct LoginView: View {
                                 action: { viewModel.loginUser() },
                                 content: {
                     ZStack {
-                        Text("Login")
-                            .frame(maxWidth: .infinity)
+                        if viewModel.isLoading {
+                            ProgressView()
+                                .progressViewStyle(CircularProgressViewStyle(tint: Color.white))
+                                .foregroundColor(.white)
+                                .frame(maxWidth: .infinity)
+                        } else {
+                            Text("Login")
+                                .frame(maxWidth: .infinity)
+                        }
+                        
                         Image(systemName: "arrow.right")
                             .frame(maxWidth: .infinity, alignment: .trailing)
                     }

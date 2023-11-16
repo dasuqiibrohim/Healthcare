@@ -41,6 +41,7 @@ struct ProfileView: View {
                     Image(systemName: "chevron.right")
                 }
                 .foregroundColor(.gray)
+                .contentShape(Rectangle())
                 .onTapGesture {
                     showProfile = false
                     isHomeMenu = false
@@ -53,6 +54,7 @@ struct ProfileView: View {
                     Image(systemName: "chevron.right")
                 }
                 .foregroundColor(.gray)
+                .contentShape(Rectangle())
                 .onTapGesture {
                     showProfile = false
                     isHomeMenu = false
