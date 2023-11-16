@@ -21,15 +21,10 @@ Untuk menginstal dan menjalankan sebuah proyek Swift dari GitHub, berikut adalah
 2. Buka Terminal:
    Buka Terminal pada komputer Anda. Terminal adalah antarmuka baris perintah yang memungkinkan Anda berinteraksi dengan sistem operasi.
 3. Pilih Lokasi Penyimpanan Proyek:
-   Gunakan perintah cd di Terminal untuk navigasi ke direktori tempat Anda ingin menyimpan proyek yang diunduh dari GitHub. Misalnya:
-
-cd ~/Documents/Projects
-
+   Gunakan perintah cd di Terminal untuk navigasi ke direktori tempat Anda ingin menyimpan proyek yang diunduh dari GitHub.
 4. Clone Repositori GitHub:
-Gunakan perintah git clone di Terminal dan tempel URL repositori yang telah Anda salin sebelumnya. Contoh:
+   Gunakan perintah git clone di Terminal dan tempel URL repositori yang telah Anda salin sebelumnya. Contoh:
 
-bash
-Copy code
 [git clone https://github.com/nama-pemilik-repo/nama-repo.git](https://github.com/dasuqiibrohim/Healthcare.git)
 
 5. Buka Proyek di Xcode:
