@@ -10,8 +10,8 @@ import Foundation
 class LoginViewModel: ObservableObject {
     private let authUseCase: AuthUseCase
     
-    @Published var textUserName = "eve.holt@reqres.in"
-    @Published var textPassword = "cityslicka"
+    @Published var textUserName = ""
+    @Published var textPassword = ""
     @Published var errorLogin = ""
     @Published var isLoggedIn = false
     @Published var isLoading = false
