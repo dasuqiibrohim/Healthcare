@@ -1,5 +1,5 @@
 //
-//  ProfileView.swift
+//  DetailProfileView.swift
 //  Healtcare
 //
 //  Created by eFishery on 16/11/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ProfileView: View {
+struct DetailProfileView: View {
     @State var selectTab = 0
     let tabData = ["Profile Saya", "Pengaturan"]
     
@@ -23,6 +23,7 @@ struct ProfileView: View {
                             .customFont(selected ? .inter600: .inter400, size: 16)
                             .padding(.vertical, 8)
                             .padding(.horizontal, 20)
+                            .foregroundColor(.title)
                             .background(selected ? Color.s2: .clear)
                             .cornerRadius(20)
                             .onTapGesture {
@@ -56,6 +57,7 @@ struct ProfileView: View {
                                 .customFont(.gilroy600, size: 14)
                             Text("Data diri anda sesuai KTP")
                                 .customFont(.inter400, size: 10)
+                                .foregroundColor(.gray)
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
                         
@@ -132,8 +134,7 @@ struct ProfileView: View {
                 .padding()
                 .padding(.vertical)
                 .padding(.top)
-                .customDropShadow()
-                .cornerRadius(20)
+                .customDropShadow(radius: 20)
                 .padding(.horizontal)
                 
                 Image(Constants.images.bannerUpdate)
@@ -144,11 +145,5 @@ struct ProfileView: View {
         }
         .background(Color.title.opacity(0.1))
         .edgesIgnoringSafeArea(.bottom)
-    }
-}
-
-struct ProfileView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProfileView()
     }
 }

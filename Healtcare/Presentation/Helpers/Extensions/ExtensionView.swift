@@ -11,11 +11,11 @@ extension View {
     func customFont(_ fontType: ViewAttributes.FontType , size: CGFloat) -> some View {
         return self.font(Font.custom(fontType.rawValue, size: size))
     }
-    func customDropShadow(radius: CGFloat = 8) -> some View {
+    func customDropShadow(color: Color = .white, radius: CGFloat = 8) -> some View {
         return self
             .background(
                 Rectangle()
-                    .fill(Color.white)
+                    .fill(color)
                     .cornerRadius(radius)
                     .shadow(
                         color: .black.opacity(0.16),

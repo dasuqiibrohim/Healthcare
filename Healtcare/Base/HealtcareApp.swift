@@ -11,7 +11,9 @@ import SwiftUI
 struct HealtcareApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                LoginView(viewModel: LoginViewModel(authUseCase: AuthUseCase(authRepository: AuthRepository(apiService: APIService()))))
+            }
         }
     }
 }

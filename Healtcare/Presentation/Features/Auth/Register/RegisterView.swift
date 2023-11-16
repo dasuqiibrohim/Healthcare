@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct RegisterView: View {
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack(spacing: 0) {
@@ -71,9 +73,7 @@ struct RegisterView: View {
                     ComponentButton(background: .title,
                                     foreground: .white,
                                     border: .title,
-                                    action: {
-                        
-                    },
+                                    action: { },
                                     content: {
                         ZStack {
                             Text("Register")
@@ -88,7 +88,7 @@ struct RegisterView: View {
                             .customFont(.inter400, size: 14)
                             .foregroundColor(.gray)
                         Button {
-                            
+                            withAnimation{ presentationMode.wrappedValue.dismiss() }
                         } label: {
                             Text("Login sekarang")
                                 .customFont(.gilroy600, size: 14)
@@ -105,6 +105,8 @@ struct RegisterView: View {
             }
             .padding()
         }
+        .navigationBarBackButtonHidden()
+        .background(Color.white)
     }
 }
 

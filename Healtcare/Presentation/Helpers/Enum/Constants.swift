@@ -25,6 +25,8 @@ enum Constants {
         static let iconFacebook = "icon_facebook"
         static let iconInstagram = "icon_instagram"
         static let iconTwitter = "icon_twitter"
+        static let iconHospital = "icon_hospital"
+        static let iconLocation = "icon_location"
         static let hospital = "hospital"
         static let microscope = "microscope"
         static let illustrationCalendar = "illustration_calendar"

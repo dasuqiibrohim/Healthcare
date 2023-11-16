@@ -38,4 +38,7 @@ extension Color {
     static let title = Color(hex: "#002060")
     static let s1 = Color(hex: "#597393")
     static let s2 = Color(hex: "#00D9D5")
+    static let orange1 = Color(hex: "#FF7200")
+    static let g10 = Color(hex: "#B3FFCB")
+    static let g70 = Color(hex: "#007025")
 }

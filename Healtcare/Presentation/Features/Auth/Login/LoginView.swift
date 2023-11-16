@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  LoginView.swift
 //  Healtcare
 //
 //  Created by eFishery on 15/11/23.
@@ -7,7 +7,11 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LoginView: View {
+    @ObservedObject var viewModel: LoginViewModel
+    @State private var dView = AnyView(EmptyView())
+    @State private var iActv = false
+    
     var body: some View {
         VStack(spacing: 0) {
             VStack(alignment: .leading, spacing: 4) {
@@ -29,13 +33,13 @@ struct ContentView: View {
                 .frame(maxWidth: .infinity, alignment: .trailing)
             
             VStack(spacing: 20) {
-                ComponentTextInput(text: .constant(""),
+                ComponentTextInput(text: $viewModel.textUserName,
                                    errorText: .constant(""),
                                    tittle: "Email",
                                    placeholder: "Masukkan email anda")
                 
-                ComponentTextInput(text: .constant(""),
-                                   errorText: .constant(""),
+                ComponentTextInput(text: $viewModel.textPassword,
+                                   errorText: $viewModel.errorLogin,
                                    tittle: "Password",
                                    placeholder: "Masukkan password anda",
                                    isPassword: true,
@@ -44,9 +48,7 @@ struct ContentView: View {
                 ComponentButton(background: .title,
                                 foreground: .white,
                                 border: .title,
-                                action: {
-                    
-                },
+                                action: { viewModel.loginUser() },
                                 content: {
                     ZStack {
                         Text("Login")
@@ -61,7 +63,10 @@ struct ContentView: View {
                         .customFont(.inter400, size: 14)
                         .foregroundColor(.gray)
                     Button {
-                        
+                        withAnimation {
+                            dView = AnyView(RegisterView())
+                            iActv = true
+                        }
                     } label: {
                         Text("Daftar sekarang")
                             .customFont(.gilroy600, size: 14)
@@ -77,11 +82,16 @@ struct ContentView: View {
             }
         }
         .padding()
+        .background(Color.white)
+        .background(NavigationLink(destination: dView, isActive: $iActv) { EmptyView() })
+        .onChange(of: viewModel.isLoggedIn) { newValue in
+            if newValue {
+                withAnimation {
+                    dView = AnyView(MainView())
+                    iActv = true
+                }
+            }
+        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
